@@ -15,6 +15,10 @@
 		0D0A52E0228B476D000AC878 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A52DF228B476D000AC878 /* main.m */; };
 		0D0A52EA228B476D000AC878 /* EveryDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A52E9228B476D000AC878 /* EveryDoTests.m */; };
 		0D0A52F5228B476D000AC878 /* EveryDoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A52F4228B476D000AC878 /* EveryDoUITests.m */; };
+		0D0A5307228B4D62000AC878 /* ToDoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A5306228B4D62000AC878 /* ToDoTableViewCell.m */; };
+		0D0A530A228B4E63000AC878 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A5309228B4E63000AC878 /* Todo.m */; };
+		0D0A530D228B4EFE000AC878 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A530C228B4EFE000AC878 /* DetailViewController.m */; };
+		0D0A5310228B5A13000AC878 /* NewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A530F228B5A13000AC878 /* NewItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		0D0A52F0228B476D000AC878 /* EveryDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0A52F4228B476D000AC878 /* EveryDoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryDoUITests.m; sourceTree = "<group>"; };
 		0D0A52F6228B476D000AC878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D0A5305228B4D62000AC878 /* ToDoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewCell.h; sourceTree = "<group>"; };
+		0D0A5306228B4D62000AC878 /* ToDoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewCell.m; sourceTree = "<group>"; };
+		0D0A5308228B4E63000AC878 /* Todo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		0D0A5309228B4E63000AC878 /* Todo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		0D0A530B228B4EFE000AC878 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0D0A530C228B4EFE000AC878 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0D0A530E228B5A13000AC878 /* NewItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewItemViewController.h; sourceTree = "<group>"; };
+		0D0A530F228B5A13000AC878 /* NewItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +113,19 @@
 		0D0A52CF228B476C000AC878 /* EveryDo */ = {
 			isa = PBXGroup;
 			children = (
-				0D0A52D0228B476C000AC878 /* AppDelegate.h */,
-				0D0A52D1228B476C000AC878 /* AppDelegate.m */,
+				0D0A52D6228B476C000AC878 /* Main.storyboard */,
 				0D0A52D3228B476C000AC878 /* ViewController.h */,
 				0D0A52D4228B476C000AC878 /* ViewController.m */,
-				0D0A52D6228B476C000AC878 /* Main.storyboard */,
+				0D0A530B228B4EFE000AC878 /* DetailViewController.h */,
+				0D0A530C228B4EFE000AC878 /* DetailViewController.m */,
+				0D0A530E228B5A13000AC878 /* NewItemViewController.h */,
+				0D0A530F228B5A13000AC878 /* NewItemViewController.m */,
+				0D0A5305228B4D62000AC878 /* ToDoTableViewCell.h */,
+				0D0A5306228B4D62000AC878 /* ToDoTableViewCell.m */,
+				0D0A5308228B4E63000AC878 /* Todo.h */,
+				0D0A5309228B4E63000AC878 /* Todo.m */,
+				0D0A52D0228B476C000AC878 /* AppDelegate.h */,
+				0D0A52D1228B476C000AC878 /* AppDelegate.m */,
 				0D0A52D9228B476C000AC878 /* Assets.xcassets */,
 				0D0A52DB228B476C000AC878 /* LaunchScreen.storyboard */,
 				0D0A52DE228B476C000AC878 /* Info.plist */,
@@ -262,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0A530A228B4E63000AC878 /* Todo.m in Sources */,
 				0D0A52D5228B476C000AC878 /* ViewController.m in Sources */,
 				0D0A52E0228B476D000AC878 /* main.m in Sources */,
 				0D0A52D2228B476C000AC878 /* AppDelegate.m in Sources */,
+				0D0A5310228B5A13000AC878 /* NewItemViewController.m in Sources */,
+				0D0A5307228B4D62000AC878 /* ToDoTableViewCell.m in Sources */,
+				0D0A530D228B4EFE000AC878 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

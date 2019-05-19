@@ -7,10 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "Todo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NewItemViewController : ViewController
+@protocol NewItemViewControllDelegate <NSObject>
+
+- (void) addInputTaskToList: (Todo *)task;
+
+@end
+
+@interface NewItemViewController : ViewController <UIPageViewControllerDelegate>
 
 @end
 

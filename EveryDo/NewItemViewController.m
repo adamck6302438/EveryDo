@@ -8,7 +8,13 @@
 
 #import "NewItemViewController.h"
 
+
 @interface NewItemViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *taskName;
+@property (weak, nonatomic) IBOutlet UISlider *prioritySlider;
+@property (strong, nonatomic) Todo *inputTask;
+
+@property (strong, nonatomic) ViewController *vc;
 
 @end
 
@@ -28,5 +34,16 @@
     // Pass the selected object to the new view controller.
 }
 */
+//- (IBAction)choosePriority:(id)sender {
+//
+//}
+
+//- (IBAction)confirm:(id)sender {
+//    NSString *title = self.taskName.text;
+//    float priority = self.prioritySlider.value;
+//    self.inputTask = [[Todo alloc]initWithTitle:title andPriority:priority];
+////    [self addTaskToList: self.vc];
+//}
+
 
 @end
